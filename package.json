@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-flow-typed",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive",
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marudor/eslint-plugin-flow-typed.git"
+  },
+  "author": "marudor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marudor/eslint-plugin-flow-typed/issues"
+  },
+  "keywords": [
+    "eslint",
+    "plugin"
+  ],
+  "homepage": "https://github.com/marudor/eslint-plugin-flow-typed#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
+    "babel-register": "^6.9.0",
+    "eslint-config-marudor": "^2.0.6",
+    "mocha": "^2.5.3"
+  }
+}
