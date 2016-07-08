@@ -23,6 +23,7 @@
   ],
   "homepage": "https://github.com/marudor/eslint-plugin-flow-typed#readme",
   "devDependencies": {
+    "babel-cli": "^6.10.1",
     "babel-eslint": "^6.1.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
