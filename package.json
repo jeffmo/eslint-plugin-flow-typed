@@ -30,5 +30,11 @@
     "babel-register": "^6.9.0",
     "eslint-config-marudor": "^2.0.6",
     "mocha": "^2.5.3"
+  },
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "./lib"
   }
 }
