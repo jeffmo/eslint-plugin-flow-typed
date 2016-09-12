@@ -43,6 +43,14 @@ ruleTester.run('flow-typed/negative-tests', negativeTestRule, {
         errorIndicator: '$ErrorExpected',
       }],
     },
+    {
+      code: 'foo();',
+      filename: 'foo/bar.js',
+      options: [{
+        minTests: 1,
+        filenamePattern: 'test',
+      }],
+    },
   ],
   invalid: [
     {
@@ -81,6 +89,16 @@ ruleTester.run('flow-typed/negative-tests', negativeTestRule, {
       options: [2],
       errors: [{
         message: 'Test has to include at least 2 negative Tests.',
+      }],
+    }, {
+      code: 'foo();',
+      filename: 'foo/bar_test.js',
+      options: [{
+        minTests: 1,
+        filenamePattern: 'test',
+      }],
+      errors: [{
+        message: 'Test has to include at least 1 negative Tests.',
       }],
     },
   ],
